@@ -1,0 +1,46 @@
+{
+ "pick": [
+  "Easy Canned Chickpea Hummus",
+  "Scrambled Egg Pasta",
+  "Chicken Breast with Salsa",
+  "Scrambled Eggs with Smoked Salmon and Lemon Cream",
+  "Low-Fat Carrot Ginger Soup",
+  "Edamame Succotash Salad",
+  "Chorizo and Scrambled Egg Breakfast Tacos",
+  "Crispy Curry-Roasted Chickpeas",
+  "Cauliflower and Feta Omelet",
+  "Cauliflower Risotto",
+  "Salmon Burgers with Spinach and Ginger",
+  "Fried Rice"
+ ],
+ "status": {
+  "openverse_stock": [
+   "easy-canned-chickpea-hummus: 200  n=0",
+   "scrambled-egg-pasta: 200  n=0",
+   "chicken-breast-with-salsa: 200  n=0",
+   "scrambled-eggs-with-smoked-salmon-and-lemon-crea: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0",
+   "low-fat-carrot-ginger-soup: 200  n=0",
+   "edamame-succotash-salad: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0",
+   "chorizo-and-scrambled-egg-breakfast-tacos: 200  n=0",
+   "crispy-curry-roasted-chickpeas: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0",
+   "cauliflower-and-feta-omelet: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0",
+   "cauliflower-risotto: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0",
+   "salmon-burgers-with-spinach-and-ginger: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0",
+   "fried-rice: 504 <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no- n=0"
+  ],
+  "mealdb": [
+   "easy-canned-chickpea-hummus: 200 via Easy n=2",
+   "scrambled-egg-pasta: 200 via Pasta n=1",
+   "chicken-breast-with-salsa: 200 via Chicken n=25",
+   "scrambled-eggs-with-smoked-salmon-and-lemon-crea: 200 via Eggs n=2",
+   "low-fat-carrot-ginger-soup: 200 via Carrot n=9",
+   "edamame-succotash-salad: 200 via Salad n=25",
+   "chorizo-and-scrambled-egg-breakfast-tacos: 200 via Chorizo n=11",
+   "crispy-curry-roasted-chickpeas: 200 via Crispy n=7",
+   "cauliflower-and-feta-omelet: 200 via Feta n=2",
+   "cauliflower-risotto: 200 via Risotto n=1",
+   "salmon-burgers-with-spinach-and-ginger: 200 via Salmon n=7",
+   "fried-rice: 200 via Fried Rice n=2"
+  ]
+ }
+}
