@@ -6,7 +6,9 @@ const recipes=JSON.parse(fs.readFileSync('tools/recipes.json','utf8'));
 fs.mkdirSync('photos',{recursive:true});
 const indexPath='photos/index.json';
 const index=fs.existsSync(indexPath)?JSON.parse(fs.readFileSync(indexPath,'utf8')):{};
-const used=new Set(Object.values(index).map(p=>p.href));
+const used=new Set([...Object.values(index).map(p=>p.href),...(fs.existsSync('tools/rejected.json')?JSON.parse(fs.readFileSync('tools/rejected.json','utf8')):[])]);
+// Skip maps, drawings, old prints, plants and shop fronts that searches sometimes return.
+const OFF=/map|diagram|drawing|illustration|engraving|lithograph|portrait|plant|field|flower|seed|market|store|shop|restaurant|menu|label|advert|catalog|postcard|1[89]\d\d|herbarium|botanical|raw|uncooked|people|family|crowd|building/i;
 const UA={'User-Agent':'MisePrototype/1.0 (student project; https://aleghisi04-creator.github.io/mise/)'};
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const STOP=new Set(['with','and','the','a','of','in','on','for','to','easy','quick','best','simple','our','my','style','homemade','one','pan','pot','sheet','skillet']);
@@ -32,7 +34,7 @@ for(const r of recipes){
   const tries=[()=>openverse(r.name),()=>commons(r.name),()=>commons(short(r.name)),...(r.wiki||[]).slice(0,1).map(t=>()=>wikiImage(t))];
   let ok=false;
   for(const t of tries){let list=[];try{list=await t();}catch{}
-    for(const c of list.filter(c=>!used.has(c.href)).slice(0,3)){if(await save(r,c)){ok=true;break;}}
+    for(const c of list.filter(c=>!used.has(c.href)&&!OFF.test(c.title)).slice(0,3)){if(await save(r,c)){ok=true;break;}}
     if(ok)break;}
   console.log(ok?'ok  ':'none',r.id);if(ok&&++n%20===0)fs.writeFileSync(indexPath,JSON.stringify(index,null,0));
 }
