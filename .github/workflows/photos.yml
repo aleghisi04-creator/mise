@@ -1,0 +1,24 @@
+name: Fetch dish photos
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [tools/recipes.json, tools/fetch-photos.mjs]
+permissions:
+  contents: write
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-save sharp@0.33.5
+      - run: node tools/fetch-photos.mjs
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add photos
+          git diff --cached --quiet || (git commit -m "Add dish photos" && git push)
